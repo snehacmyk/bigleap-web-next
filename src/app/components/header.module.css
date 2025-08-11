@@ -1,15 +1,12 @@
 /* header.module.scss */
 /* Make sure the header sits above any hero art */
 .header {
-
-  padding-top: 0 !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0 1rem; */
+  padding: 2rem 1rem;
   position: relative;
-  z-index: 1000;
-  /* <- puts header above overlapping sections */
+  z-index: 1000; /* <- puts header above overlapping sections */
 }
 
 @media (min-width: 768px) {
@@ -17,7 +14,6 @@
     padding: 0 10%;
   }
 }
-
 .nav ul {
   list-style: none;
   margin: 0;
@@ -36,8 +32,7 @@
   font-weight: 500;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  transition: color 0.2s ease;
-  /* smoother hover */
+  transition: color 0.2s ease; /* smoother hover */
 }
 
 /* simpler, higher-specificity selector is fine */
@@ -55,8 +50,7 @@
 
 .active:hover {
   background: none;
-  -webkit-text-fill-color: initial;
-  /* re-enable color */
+  -webkit-text-fill-color: initial; /* re-enable color */
   color: red;
 }
 
@@ -77,8 +71,6 @@
   width: 5rem;
   height: 5rem;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
-}
-
-/*# sourceMappingURL=header.module.css.map */
+}/*# sourceMappingURL=header.module.css.map */

@@ -11,12 +11,11 @@
   margin: 0;
   position: relative;
   z-index: 999;
-  left: 100px;
 }
 .infosec .contacts ul li {
   background: #ed2124;
   list-style-type: none;
-  padding: 15px 20px 13px 20px;
+  padding: 20px 40px 20px 40px;
 }
 .infosec .contacts ul li a {
   color: #fff;
