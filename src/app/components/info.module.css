@@ -1,0 +1,31 @@
+.infosec {
+  padding: 0 !important;
+}
+.infosec .contacts {
+  display: flex;
+}
+.infosec .contacts ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 0;
+  position: relative;
+  z-index: 999;
+  left: 100px;
+}
+.infosec .contacts ul li {
+  background: #ed2124;
+  list-style-type: none;
+  padding: 15px 20px 13px 20px;
+}
+.infosec .contacts ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.infosec .contacts ul li a i {
+  color: #fff;
+  padding: 0 5px;
+}
+.infosec .contacts ul li a:hover {
+  text-decoration: none;
+}/*# sourceMappingURL=info.module.css.map */

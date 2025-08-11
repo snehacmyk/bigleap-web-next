@@ -1,0 +1,43 @@
+/* INDEX PAGE CSS */
+.hero {
+  height: 90vh;
+}
+.hero .hanging img[src="Yeeha.png"] {
+  display: block;
+  margin: 0 auto;
+  transform-origin: top center;
+  filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.15));
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+.hero .hanging img[src="character.png"] {
+  display: block;
+  margin: 0 auto;
+  transform-origin: top center;
+  filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.15));
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 1000px;
+  top: -72%;
+}
+
+.about {
+  padding: 200px 0 80px 0;
+}
+.about .rowss {
+  display: flex;
+  align-items: center;
+  padding: 0 250px;
+}
+.about .rowss .image {
+  width: 90%;
+}
+.about .rowss .abtcnt {
+  color: #fff;
+  font-size: 1.7rem !important;
+}/*# sourceMappingURL=index.module.css.map */

@@ -1,0 +1,53 @@
+.infosec {
+    padding: 0 !important;
+
+    .contacts {
+        display: flex;
+
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            margin: 0;
+            position: relative;
+            z-index: 999;
+            left: 100px;
+
+            li {
+                background: #ed2124;
+                list-style-type: none;
+                padding: 15px 20px 13px 20px;
+
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+
+                    i {
+                        color: #fff;
+                        padding: 0 5px;
+                    }
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    // .shape {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     bottom: 0;
+    //     z-index: -1;
+
+    //     img {
+    //         width: 100%;
+    //         height: auto;
+    //         opacity: 0.5;
+    //     }
+    // }
+}
