@@ -47,7 +47,7 @@ export default function Home() {
         <h2 className=""></h2>
         <p className=""></p>
 
-      <Slider></Slider>
+      <Slider/>
       </section>
     </>
   );

@@ -20,3 +20,7 @@
   -o-object-fit: cover;
      object-fit: cover;
 }/*# sourceMappingURL=slider.css.map */
+
+#app {
+  height: 100%;
+}

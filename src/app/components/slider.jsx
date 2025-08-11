@@ -12,9 +12,10 @@ import './slider.module.css';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Fauna_One } from 'next/font/google';
 
 
-export default function Slider() {
+export default function Slider(datas = ["Sl01", "Sl02", "Sl03"]) {
     return (
         <>
             <Swiper
@@ -25,21 +26,16 @@ export default function Slider() {
                     disableOnInteraction: false,
                 }}
                 pagination={{
-                    clickable: true,
+                    clickable: false,
                 }}
-                navigation={true}
+                navigation={false}
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
             >
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                <SwiperSlide>Slide 5</SwiperSlide>
-                <SwiperSlide>Slide 6</SwiperSlide>
-                <SwiperSlide>Slide 7</SwiperSlide>
-                <SwiperSlide>Slide 8</SwiperSlide>
-                <SwiperSlide>Slide 9</SwiperSlide>
+                <SwiperSlide style={{ height: '20vh', width: '100%' }}>
+                    <img src="Scate.png" alt="" />
+                </SwiperSlide>
+
             </Swiper>
         </>
     );
