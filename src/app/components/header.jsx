@@ -13,10 +13,10 @@ export default function MainHeader(){
                 <nav className={styles.nav}>
                     <ul>
                         <li>
-                           <Link href="/">HOME</Link>
+                           <Link href="/about">HOME</Link>
                         </li>
                         <li>
-                            <Link href="#">ABOUT US</Link>
+                            <Link href="/about">ABOUT US</Link>
                         </li>
                         <li>
                             <Link href="#">SERVICES</Link>

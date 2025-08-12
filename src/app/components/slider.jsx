@@ -23,12 +23,12 @@ export default function Slider(datas = ["Sl01", "Sl02", "Sl03"]) {
                 centeredSlides={true}
                 autoplay={{
                     delay: 2500,
-                    disableOnInteraction: false,
+                    disableOnInteraction: true,
                 }}
                 pagination={{
                     clickable: false,
                 }}
-                navigation={false}
+                navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
             >

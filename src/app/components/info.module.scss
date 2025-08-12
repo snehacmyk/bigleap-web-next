@@ -20,6 +20,7 @@
                 padding: 20px 40px 20px 40px;
 
 
+
                 a {
                     color: #fff;
                     text-decoration: none;
@@ -34,6 +35,12 @@
                     }
                 }
             }
+        }
+    }
+
+    @include respond-below(sm) {
+        li {
+            padding: 20px 15px;
         }
     }
 
