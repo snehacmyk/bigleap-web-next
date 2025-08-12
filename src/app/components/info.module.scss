@@ -38,11 +38,7 @@
         }
     }
 
-    @include respond-below(sm) {
-        li {
-            padding: 20px 15px;
-        }
-    }
+   
 
     // .shape {
     //     position: absolute;
