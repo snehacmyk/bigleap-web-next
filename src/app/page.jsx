@@ -53,31 +53,30 @@ export default function Home() {
           </div>
           <div className={styles.specialslide}>
             <Slider datas={[
-              { img: "img2.jpg", caption: "Caption 1" , readMoreButton:"Know this.." },
-              { img: "img3.jpg", caption: "Caption 2" , readMoreButton:"" },
-              { img: "img4.jpg", caption: "Caption 3" , readMoreButton:"" },
-              { img: "img1.jpg", caption: "Caption 4" , readMoreButton:"" },
-              { img: "img2.jpg", caption: "" , readMoreButton:"" }
+              { img: "img2.jpg", caption: "2D motion graphics", readbtn: "Learn more" },
+              { img: "img3.jpg", caption: "Whiteboard Animations", readbtn: "Learn more" },
+              { img: "img4.jpg", caption: "Storytelling scripted animations", readbtn: "Learn more" },
+              { img: "img1.jpg", caption: "3D product animation", readbtn: "Learn more" },
+              { img: "img2.jpg", caption: "2D motion graphics", readbtn: "Learn more" }
             ]} /></div>
-
-            <Slider datas={[
-              { img: "img2.jpg", caption: "rthertherh" , readMoreButton:"Know this.." },
-              { img: "img2.jpg", caption: "ehrtyejrtyj" , readMoreButton:"Know this.." },
-              { img: "img2.jpg", caption: "erthyetyjhte" , readMoreButton:"Know this.." },
-              { img: "img2.jpg", caption: "qtggbd" , readMoreButton:"Know this.." },
-              { img: "img2.jpg", caption: "wertgeht" , readMoreButton:"Know this.." }
-            ]} 
-            spaceBetween={0}
-            slideImageStyle={{
-              width: '90%',
-            }}
-            />
         </div>
       </section>
 
-      <section className={styles.video}>
-        <img src="logo.png" alt="logo" />
-      </section>
+      {/* <Slider datas={[
+        { img: "img2.jpg", caption: "rthertherh", readMoreButton: "Know this.." },
+        { img: "img2.jpg", caption: "ehrtyejrtyj", readMoreButton: "Know this.." },
+        { img: "img2.jpg", caption: "erthyetyjhte", readMoreButton: "Know this.." },
+        { img: "img2.jpg", caption: "qtggbd", readMoreButton: "Know this.." },
+        { img: "img2.jpg", caption: "wertgeht", readMoreButton: "Know this.." }
+      ]}
+        spaceBetween={0}
+        slideImageStyle={{
+          width: '90%',
+        }}
+      /> */}
+
+
+     
 
     </>
   );

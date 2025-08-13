@@ -1,3 +1,11 @@
+.circle-nav-btn:hover {
+  transform: translateY();
+  box-shadow: -2px 2px 12px 2px #ed232a;
+  background: #ffffff;
+  color: #ed232a;
+  text-decoration: none;
+}
+
 .circle-nav-btn {
   display: flex;
   align-items: center;
@@ -20,10 +28,13 @@
 
 .circle-nav-btn.left {
   left: 0;
+  font-size: 25px;
 }
 
 .circle-nav-btn.right {
   right: 0;
+  font-size: 25px;
+
 }
 
 :root {

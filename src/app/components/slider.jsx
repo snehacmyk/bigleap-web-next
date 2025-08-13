@@ -19,11 +19,11 @@ import { Fauna_One } from 'next/font/google';
 
 export default function Slider({
     datas = [
-        { img: "img2.jpg", caption: "2D motion graphics", readMoreButton:"Know More" },
-        { img: "img3.jpg", caption: "Whiteboard Animations", readMoreButton:"Know More" },
-        { img: "img4.jpg", caption: "Storytelling scripted animations", readMoreButton:"Know More" },
-        { img: "img1.jpg", caption: "3D product animation", readMoreButton:"Know More" },
-        { img: "img2.jpg", caption: "", readMoreButton:"Know More" }
+        { img: "img2.jpg", caption: "2D motion graphics", readbtn:"Know More", },
+        { img: "img3.jpg", caption: "Whiteboard Animations", readbtn:"Know More" },
+        { img: "img4.jpg", caption: "Storytelling scripted animations", readbtn:"Know More" },
+        { img: "img1.jpg", caption: "3D product animation", readbtn:"Know More" },
+        { img: "img2.jpg", caption: "2D motion graphics", readbtn:"Know More" }
     ],
     spaceBetween = 20,
     slidesPerView = 4,
@@ -68,8 +68,8 @@ export default function Slider({
                             { item.caption != "" ? (
                                 <div style={{ marginTop: '8px', color: '#fff', fontSize: '16px' }}>{item.caption}</div>
                             ) : null}
-                            {(item.readMoreButton != "") ? (
-                                <button style={{ marginTop: '8px' }}>{item.readMoreButton}</button>
+                            {(item.readbtn != "") ? (
+                                <button style={{ marginTop: '8px' }} className={styles.readbtn}>{item.readbtn}</button>
                             ) : null}
                         </div>
                     </SwiperSlide>
