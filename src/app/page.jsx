@@ -28,13 +28,14 @@ export default function Home() {
               <img src="Scate.png" alt="" className={styles.image} />
             </div>
             <div className="col-xl-8">
-              <h4 className={styles.abtcnt}>
-                Bigleap is a digital product design agency
-                thatturns complex technology into intuitive,
-                usable interfaces. We work with forward-thinking
-                teams to create market-ready digital products that
-                areeasy to use and hard to ignore.
-              </h4>
+              <div className={styles.abtcnt}>
+                <h4>Bigleap is a digital product design agency
+                  thatturns complex technology into intuitive,
+                  usable interfaces. We work with forward-thinking
+                  teams to create market-ready digital products that
+                  areeasy to use and hard to ignore.</h4>
+
+              </div>
             </div>
           </div>
         </div>
@@ -43,12 +44,22 @@ export default function Home() {
 
       {/* SLIDER SECTION */}
 
-      <section className={styles["special-head"]}>
-        <h2 className=""></h2>
-        <p className=""></p>
+      <section className={styles['slide-head']}>
+        <div className="container">
+          <div className={styles['special-head']}>
+            <h2>WE ARE SPECIALIZED</h2>
 
-      <Slider/>
+            <p>We are a highly dynamic creative bunch who specializes in delivering 360 production services. Specialized company in photography, videography and film production in UAE</p>
+          </div>
+          <div className={styles.specialslide}>
+            <Slider /></div>
+        </div>
       </section>
+
+      <section className={styles.video}>
+        <img src="logo.png" alt="logo" />
+      </section>
+
     </>
   );
 }
