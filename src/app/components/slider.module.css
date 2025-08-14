@@ -1,3 +1,12 @@
+.singlebtn-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 16px;
+  
+}
+
 #swiper-nav-btn {
   display: flex;
   align-items: center;
