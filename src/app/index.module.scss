@@ -38,8 +38,8 @@
     .rowss {
         display: flex;
         align-items: center;
-        padding: 0 250px;
-
+        padding: 0 240px;
+        gap: 50px;
 
         .image {
             width: 90%;
@@ -47,7 +47,7 @@
 
         .abtcnt {
             h4 {
-
+                font-family: "Montserrat", sans-serif !important;
                 color: #fff;
                 font-size: 1.7rem !important;
             }
@@ -77,7 +77,7 @@
         p {
             text-align: center;
             color: #fff;
-            width: 70%;
+            width: 80%;
         }
 
 
@@ -111,89 +111,89 @@
     .watch {
 
 
-    .first-video {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 20px;
+        .first-video {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 20px;
 
 
-        .video1 {
-            width: 100%;
+            .video1 {
+                width: 100%;
+                height: 100%;
+
+                iframe {
+                    width: 100%;
+                    height: 400px;
+                }
+            }
+
+            .video2 {
+                width: 70%;
+
+                iframe {
+                    width: 100%;
+                    height: 300px;
+                }
+            }
+        }
+
+
+
+        .second-video {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
             height: 100%;
 
-            iframe {
+
+            .content {
+                padding-top: 80px;
+
+
+
+                h6 {
+                    color: #fff;
+                    font-size: 20px;
+                }
+
+                h2 {
+                    color: #fff;
+                    font-family: "Boldonse", system-ui !important;
+                    font-size: 50px;
+                }
+
+            }
+
+            .video3 {
                 width: 100%;
-                height: 400px;
-            }
-        }
 
-        .video2 {
-            width: 70%;
-
-            iframe {
-                width: 100%;
-                height: 300px;
-            }
-        }
-    }
+                iframe {
+                    width: 100%;
+                    height: 400px;
 
 
-
-    .second-video {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        height: 100%;
-
-
-        .content {
-            padding-top: 80px;
-
-
-
-            h6 {
-                color: #fff;
-                font-size: 20px;
+                }
             }
 
-            h2 {
-                color: #fff;
-                font-family: "Boldonse", system-ui !important;
-                font-size: 50px;
-            }
 
         }
-
-        .video3 {
-            width: 100%;
-
-            iframe {
-                width: 100%;
-                height: 400px;
-
-
-            }
-        }
-
 
     }
-
-}
 
 }
 
 // KEY PROJECT AREA START
 
 
-.video-slider{
+.video-slider {
     padding: 200PX 0 80PX;
 }
 
 
 // MOTION GRAPHICS AREA START
-.motion-graphics{
+.motion-graphics {
     padding: 120PX 0 80PX 0;
 
     .motion-graphics-content {
@@ -204,16 +204,92 @@
 
         h5 {
             color: #fff;
-            font-size: 1.5rem;
+            font-size: small;
         }
 
         h2 {
+            padding: 20px 0;
             color: #fff;
             font-family: "Boldonse", system-ui !important;
-            font-size: 70px;
+            font-size: 50px;
         }
     }
-    .motion-gif{
-        
+
+    .motion-gif {}
+}
+
+// BUSINESS AREA START
+
+
+.businessArea {
+    padding: 120px 0 80px 0;
+
+    .business-list {
+
+        .heading {
+            h2 {
+                color: #fff;
+                font-size: 3.1rem;
+                font-weight: 700;
+                line-height: 82px;
+
+            }
+
+            .listp {
+                color: #fff;
+            }
+        }
+
+        .lists {}
+    }
+
+
+    // BUSINESS AREA ITEMS CSS
+
+    .buscol {
+        .businessHead {
+            h5 {
+                color: #ed232a;
+                font-size: 1.1rem;
+                font-weight: lighter;
+                font-family: "Montserrat", sans-serif !important;
+            }
+
+
+            .listcontent {
+                color: #fff;
+            }
+
+        }
+    }
+}
+
+
+// DIFFERENT AREA START
+
+.test {
+    padding: 120px 0 80px;
+
+
+    .diff {
+        color: #fff;
+        text-align: center;
+    }
+
+    .all {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 40px 60px;
+        gap: 30px;
+
+        .each{
+            .h5{
+                color: #ed232a;
+            }
+            p{
+                color: #a9a4a4;
+            }
+        }
     }
 }

@@ -31,8 +31,8 @@ export default function Slider({
     breakpoints = {
         320: { slidesPerView: 1, spaceBetween: 10 },
         640: { slidesPerView: 2, spaceBetween: 15 },
-        1024: { slidesPerView: 4, spaceBetween: 120 },
-        1366: { slidesPerView: 4, spaceBetween: 120 },
+        1024: { slidesPerView: 3, spaceBetween: 120 },
+        1366: { slidesPerView: 3, spaceBetween: 120 },
     },
     slideImageStyle = {
         width: '90%',

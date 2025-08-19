@@ -2,10 +2,27 @@ import Image from "next/image";
 // import styles from "./page.module.css";
 import styles from "./index.module.scss";
 import Slider from "./components/slider";
+import BusinessArea from "./components/business-area";
+import Difference from "./components/different";
 
 export default function Home() {
 
 
+  const list = [
+    {
+      title: 'Strengthening brand identity',
+      sub: 'Custom animated videos make all the difference by anchoring your unique brand identity, that will leave your mark in the competitive edge.'
+    },
+    {
+      title: 'Simplifying complex ideas',
+      sub: 'Complex concepts can be simplified with the help of engaging animation, that will effectively communicate your idea..'
+    },
+    {
+      title: 'Strengthening brand identity',
+      sub: 'Utilize the innovations of animation and create enthralling content that will lead to customer engagement, resulting in more leads and increase in sales.'
+    },
+
+  ];
 
   return (
     <>
@@ -58,7 +75,10 @@ export default function Home() {
               { img: "img4.jpg", caption: "Storytelling scripted animations", readbtn: "Know More", singlebtn: "" },
               { img: "img1.jpg", caption: "3D product animation", readbtn: "Know More", singlebtn: "" },
               { img: "img2.jpg", caption: "2D motion graphics", readbtn: "Know More", singlebtn: "View All" },
-            ]} />
+            ]}
+            />
+
+
           </div>
         </div>
       </section>
@@ -165,7 +185,57 @@ export default function Home() {
       </section>
 
 
-      {/*  */}
+      {/* BUSINESS AREA START */}
+
+      <section className={styles.businessArea}>
+        <div className="container">
+          <div className={styles["business-list"]}>
+            <div className="row align-items-center">
+              <div className="col-xl-5">
+                <div className={styles.heading}>
+                  <h2>Let animation lead your business</h2>
+                  <p className={styles.listp}>Where words fail, visuals take over. In this tech-driven world, animation is the major edge that provides a creative nudge to communication.</p>
+                </div>
+              </div>
+              <div className="col-xl-7">
+                <div className={styles.lists}>
+                  {
+                    list.map((item, idx) => (
+                      <BusinessArea key={idx} title={item.title} sub={item.sub}></BusinessArea>
+
+                    ))
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+{/* CLIENTS AREA START */}
+
+      {/* <Slider/> */}
+
+
+
+{/* DIFFERENCE AREA START */}
+      {/* <section className={styles.test}>
+        <h1 className={styles.h1}>The Difference We Bring</h1>
+        <div className="row">
+          <div className={styles.all}>
+            {
+              list.map((item, idx) => (
+                <Items key={idx} title={item.title} sub={item.sub}></Items>
+
+              ))
+            }
+          </div>
+        </div>
+      </section> */}
+
+
+      <Difference></Difference>
     </>
 
 
