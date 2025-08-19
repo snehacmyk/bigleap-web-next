@@ -283,12 +283,22 @@
         padding: 40px 60px;
         gap: 30px;
 
-        .each{
-            .h5{
+        .each {
+            border: 2px dotted #5f5f5f;
+            height: 230px;
+            padding: 15px 20px;
+            border-radius: 12px;
+
+            .h5 {
                 color: #ed232a;
+                font-size: 1.1rem;
+                font-weight: lighter;
+                font-family: Montserrat, sans-serif !important;
             }
-            p{
-                color: #a9a4a4;
+
+            p {
+                color: #cac7c7;
+                align-items: left;
             }
         }
     }

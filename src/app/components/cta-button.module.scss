@@ -1,0 +1,34 @@
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+
+        a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ed232a;
+            color: #fff;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 13px 30px;
+            border-radius: 40px;
+            box-shadow: -2px 2px 0px 1px #fff;
+            border: none;
+            transition: transform 0.1s, box-shadow 0.1s;
+            position: relative;
+
+            &:hover {
+                transform: translateY(2px);
+                box-shadow: -2px 2px 12px 2px #ed232a;
+                background: #ffffff;
+                color: #ed232a;
+                text-decoration: none;
+            }
+
+          
+        }
+    }

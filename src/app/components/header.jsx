@@ -16,7 +16,7 @@ export default function MainHeader() {
 
     return (
         <header className={styles.header}>
-            <Link href="/" className={styles.logo}>
+            <Link href="#" className={styles.logo}>
                 <img src="logo.png" alt="logo" />
             </Link>
 
@@ -36,7 +36,7 @@ export default function MainHeader() {
             <nav className={menuOpen ? `${styles.nav} ${styles.open}` : styles.nav}>
                 <ul onClick={closeMenu}>
                     <li>
-                        <Link href="/about">HOME</Link>
+                        <Link href="#">HOME</Link>
                     </li>
                     <li>
                         <Link href="/about">ABOUT US</Link>

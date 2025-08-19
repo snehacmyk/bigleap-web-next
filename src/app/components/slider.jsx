@@ -19,11 +19,8 @@ import { Fauna_One } from 'next/font/google';
 
 export default function Slider({
     datas = [
-        { img: "img2.jpg", caption: "2D motion graphics", readbtn: "Know More", singlebtn: "" },
-        { img: "img3.jpg", caption: "Whiteboard Animations", readbtn: "Know More", singlebtn: "" },
-        { img: "img4.jpg", caption: "Storytelling scripted animations", readbtn: "Know More", singlebtn: "" },
-        { img: "img1.jpg", caption: "3D product animation", readbtn: "Know More" },
-        { img: "img2.jpg", caption: "2D motion graphics", readbtn: "Know More", singlebtn: "View All" },
+        { idname: "a", img: "img2.jpg", caption: "2D motion graphics", readbtn: "Know More" },
+        { idname: "a", img: "img3.jpg", caption: "Whiteboard Animations", readbtn: "Know More" },
     ],
     spaceBetween = 20,
     slidesPerView = 4,
@@ -36,7 +33,10 @@ export default function Slider({
     },
     slideImageStyle = {
         width: '90%',
-    }
+    },
+    navButtons = true
+
+
 }) {
     const swiperRef = useRef(null);
     const isVideoSlides = datas.length > 0 && datas[0].iframe;
@@ -58,7 +58,7 @@ export default function Slider({
             >
                 {isVideoSlides
                     ? datas.map((item, idx) => (
-                        <SwiperSlide key={idx + (item.caption || '')}>
+                        <SwiperSlide key={item.idname ? `video-${item.idname}-${idx}` : `video-slide-${idx}`}>
                             <div style={{ position: 'relative', width: '100%', height: '400px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <iframe
                                     src={item.iframe}
@@ -83,10 +83,10 @@ export default function Slider({
                         </SwiperSlide>
                     ))
                     : datas.map((item, idx) => (
-                        <SwiperSlide key={idx + item.caption}>
+                        <SwiperSlide key={item.idname ? `${item.idname}-${idx}` : `slide-${idx}`}>
                             <div>
                                 <img src={item.img} alt={item.caption} style={slideImageStyle} />
-                                 {item.date && (
+                                {item.date && (
                                     <div style={{ marginTop: '8px', color: '#fff', fontSize: '14px' }}>{item.date}</div>
                                 )}
                                 {item.caption != "" ? (
@@ -95,26 +95,16 @@ export default function Slider({
                                 {(item.readbtn != "") ? (
                                     <button style={{ marginTop: '8px', background: 'none', border: 'none', color: '#ed232a' }} className={styles.readbtn}>{item.readbtn}</button>
                                 ) : null}
-                               
-                            </div>
-                            <div>
-                                {(item.singlebtn != "") ? (
-                                    <a style={{ marginTop: '8px' }} className={styles.singlebtn}>{item.singlebtn}</a>
-                                ) : null}
+
                             </div>
                         </SwiperSlide>
                     ))}
-                    
+
             </Swiper>
-            <SwiperNavigation
+            {navButtons && <SwiperNavigation
                 onPrev={() => swiperRef.current && swiperRef.current.slidePrev()}
                 onNext={() => swiperRef.current && swiperRef.current.slideNext()}
-            />
-            {!isVideoSlides && (
-                <div style={{ display: 'flex', justifyContent: 'center', marginTop: '24px' }}>
-                    <button className={styles.singlebtn}>View All</button>
-                </div>
-            )}
+            />}
         </div>
     );
 }
