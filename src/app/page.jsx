@@ -5,9 +5,6 @@ import Slider from "./components/slider";
 import BusinessArea from "./components/business-area";
 import Difference from "./components/different";
 
-export default function Home() {
-
-
   const list = [
     {
       title: 'Strengthening brand identity',
@@ -23,6 +20,9 @@ export default function Home() {
     },
 
   ];
+export default function Home() {
+
+
 
   return (
     <>
@@ -31,9 +31,9 @@ export default function Home() {
 
       <section className={styles.hero}>
         <div className={styles.hanging}>
-          <img id="yeeha-img" src="Yeeha.png" alt="yeeha" />
+          <Image id="yeeha-Image" src="/Yeeha.png" alt="yeeha" width={1711} height={655} className={styles.yeehaImage}/>
           {/* <img id="img360" src="360.png" alt="360image" /> */}
-          <img id="character-img" src="character.png" alt="Character Image" />
+          <Image id="character-Image" src="/character.png" alt="Character Image" width={1200} height={1666} className={styles.characterImage} />
         </div>
       </section>
       {/* HERO SECTION END */}
@@ -42,7 +42,7 @@ export default function Home() {
         <div className="row align-items-center">
           <div className={styles.rowss}>
             <div className="col-xl-4">
-              <img src="Scate.png" alt="" className={styles.image} />
+              <Image src="/Scate.png" alt="" className={styles.image} width={441} height={404} />
             </div>
             <div className="col-xl-8">
               <div className={styles.abtcnt}>
