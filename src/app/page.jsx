@@ -77,6 +77,18 @@ export default function Home() {
               { img: "img1.jpg", caption: "3D product animation", readbtn: "Know More", idname:"folio" },
               { img: "img2.jpg", caption: "2D motion graphics", readbtn: "Know More", idname:"folio" },
             ]}
+              spaceBetween={5}
+              slidesPerView={4}
+              loop={true}
+              slideImageStyle={{
+                width: '60%',
+              }}
+              breakpoints = {{
+                320: { slidesPerView: 1, spaceBetween: 10 },
+                640: { slidesPerView: 2, spaceBetween: 15 },
+                1024: { slidesPerView: 3, spaceBetween: 120 },
+                1366: { slidesPerView: 4, spaceBetween: 20 },
+              }}
             />
 
               <CTAButton title="VIEW ALL" link="#" />
@@ -181,6 +193,12 @@ export default function Home() {
               width: '100%',
 
             }}
+            breakpoints = {{
+                320: { slidesPerView: 1, spaceBetween: 10 },
+                640: { slidesPerView: 2, spaceBetween: 15 },
+                1024: { slidesPerView: 3, spaceBetween: 120 },
+                1366: { slidesPerView: 3, spaceBetween: 50 },
+            }}
           />
         </div>
         {/* </div> */}
@@ -253,14 +271,28 @@ export default function Home() {
             { img: "gr-2.gif" , idname: "clientSlide2"},
             { img: "gr-3.gif" , idname: "clientSlide3"},
             { img: "gr-1.gif" , idname: "clientSlide4"},
+            { img: "gr-1.gif" , idname: "clientSlide1"},
+            { img: "gr-2.gif" , idname: "clientSlide2"},
+            { img: "gr-3.gif" , idname: "clientSlide3"},
+            { img: "gr-1.gif" , idname: "clientSlide4"},
+            { img: "gr-1.gif" , idname: "clientSlide1"},
+            { img: "gr-2.gif" , idname: "clientSlide2"},
+            { img: "gr-3.gif" , idname: "clientSlide3"},
+            { img: "gr-1.gif" , idname: "clientSlide4"},
           ]}
-            spaceBetween={1}
-            slidesPerView={11}
+            spaceBetween={0}
+            slidesPerView={10}
             slideImageStyle={{
               width: '100%',
 
             }}
             navButtons={false}
+            breakpoints = {{
+                320: { slidesPerView: 1, spaceBetween: 10 },
+                640: { slidesPerView: 2, spaceBetween: 15 },
+                1024: { slidesPerView: 3, spaceBetween: 120 },
+                1366: { slidesPerView: 10, spaceBetween: 0 },
+            }}
           />
         </div>
         {/* </div> */}
