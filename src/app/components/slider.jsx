@@ -4,6 +4,7 @@ import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperNavigation from './SwiperNavigation';
 import styles from './slider.module.css';
+import Image from 'next/image';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -19,8 +20,8 @@ import { Fauna_One } from 'next/font/google';
 
 export default function Slider({
     datas = [
-        { idname: "a", img: "img2.jpg", caption: "2D motion graphics", readbtn: "Know More" },
-        { idname: "a", img: "img3.jpg", caption: "Whiteboard Animations", readbtn: "Know More" },
+        { idname: "a", img: "img2.jpg", imgWH: 100, caption: "2D motion graphics", readbtn: "Know More" },
+        { idname: "a", img: "img3.jpg", imgWH: 100, caption: "Whiteboard Animations", readbtn: "Know More" },
     ],
     spaceBetween = 20,
     slidesPerView = 4,
@@ -33,8 +34,9 @@ export default function Slider({
     },
     slideImageStyle = {
         width: '90%',
+        height: '90%',
     },
-    navButtons = true
+    navButtons = true,
 
 
 }) {
@@ -55,6 +57,7 @@ export default function Slider({
                 breakpoints={isVideoSlides ? { 320: { slidesPerView: 1 }, 640: { slidesPerView: 1 }, 1024: { slidesPerView: 1 }, 1366: { slidesPerView: 1 } } : breakpoints}
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
+                
             >
                 {isVideoSlides
                     ? datas.map((item, idx) => (
@@ -85,7 +88,7 @@ export default function Slider({
                     : datas.map((item, idx) => (
                         <SwiperSlide key={item.idname ? `${item.idname}-${idx}` : `slide-${idx}`}>
                             <div>
-                                <img src={item.img} alt={item.caption} style={slideImageStyle} />
+                                <Image src={item.img} alt={item.caption || "img"} style={slideImageStyle} width={item.imgWH} height={item.imgWH}/>
                                 {item.date && (
                                     <div style={{ marginTop: '8px', color: '#fff', fontSize: '14px' }}>{item.date}</div>
                                 )}

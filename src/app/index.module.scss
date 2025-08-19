@@ -4,7 +4,7 @@
     height: 90vh;
 
     .hanging {
-        img[src="Yeeha.png"] {
+       .yeehaimage {
             display: block;
             margin: 0 auto;
             transform-origin: top center;
@@ -13,10 +13,11 @@
             left: 0;
             right: 0;
             margin: 0 auto;
-            width: 80%;
+            width: 100%;
+            // height: 90%;
         }
 
-        img[src="character.png"] {
+        .characterimage {
             display: block;
             margin: 0 auto;
             transform-origin: top center;
@@ -25,8 +26,8 @@
             left: 0;
             right: 0;
             margin: 0 auto;
-            width: 1000px;
-            top: -72%;
+            // width: 100%;
+            top: -92%;
         }
     }
 }
@@ -300,6 +301,26 @@
                 color: #cac7c7;
                 align-items: left;
             }
+        }
+    }
+}
+
+// CLIENT AREA
+
+.client-section{
+    .client-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h5{
+            color: #fff;
+            font-size: 1.1rem;
+        }
+        h2{
+            color: #fff;
+            font-family: "Boldonse", system-ui !important;
+            font-size: 50px;
+            padding: 20px 0;
         }
     }
 }
