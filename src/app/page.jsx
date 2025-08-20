@@ -5,6 +5,7 @@ import Slider from "./components/slider";
 import BusinessArea from "./components/business-area";
 import Difference from "./components/different";
 import CTAButton from "./components/cta-button";
+import FAQSection from "./components/faq";
 const list = [
   {
     title: 'Strengthening brand identity',
@@ -239,7 +240,7 @@ export default function Home() {
       {/* DIFFERENCE AREA START */}
       <Difference></Difference>
 
-
+<FAQSection/>
 
       <section className={styles["client-section"]}>
           <div className={styles["client-content"]}>

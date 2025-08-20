@@ -1,5 +1,5 @@
 import styles from '../index.module.scss';
-import Items from './item'
+import Items from './item';
 export default function Difference(){
     const list = [
         {

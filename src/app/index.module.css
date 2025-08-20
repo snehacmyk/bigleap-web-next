@@ -207,6 +207,9 @@
   align-items: left;
 }
 
+.client-section {
+  padding: 120px 0 80px 0;
+}
 .client-section .client-content {
   display: flex;
   flex-direction: column;
