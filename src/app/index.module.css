@@ -37,6 +37,11 @@
 .about .rowss .image {
   width: 90%;
 }
+.about .rowss .abtcnt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .about .rowss .abtcnt h4 {
   font-family: "Montserrat", sans-serif !important;
   color: #fff;
@@ -113,6 +118,9 @@
 }
 .watch-area .watch .second-video .content {
   padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .watch-area .watch .second-video .content h6 {
   color: #fff;

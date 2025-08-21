@@ -47,11 +47,15 @@
         }
 
         .abtcnt {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
             h4 {
                 font-family: "Montserrat", sans-serif !important;
                 color: #fff;
                 font-size: 1.7rem !important;
             }
+            
         }
     }
 }
@@ -153,8 +157,9 @@
 
             .content {
                 padding-top: 80px;
-
-
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
 
                 h6 {
                     color: #fff;

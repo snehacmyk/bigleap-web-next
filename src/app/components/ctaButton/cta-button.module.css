@@ -4,7 +4,7 @@
   align-items: center;
   margin: 20px 0;
 }
-.btn a {
+.btn a, .btn button {
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -20,8 +20,9 @@
   border: none;
   transition: transform 0.1s, box-shadow 0.1s;
   position: relative;
+  cursor: pointer;
 }
-.btn a:hover {
+.btn a:hover, .btn button:hover {
   transform: translateY(2px);
   box-shadow: -2px 2px 12px 2px #ed232a;
   background: #ffffff;

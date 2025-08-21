@@ -1,0 +1,19 @@
+.enquiry-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.enquiry-section .image {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.enquiry-section .buttonContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}/*# sourceMappingURL=enquiry.module.css.map */

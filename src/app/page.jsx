@@ -54,7 +54,7 @@ export default function Home() {
                   usable interfaces. We work with forward-thinking
                   teams to create market-ready digital products that
                   areeasy to use and hard to ignore.</h4>
-                <CTAButton title="ABOUT US" link="/about" />
+                    <CTAButton title="ABOUT US" link="/about" />
 
               </div>
             </div>
@@ -134,9 +134,7 @@ export default function Home() {
                     <h6> Our Portfolio</h6>
                     <h2>Lorem ipsum </h2>
                     <CTAButton title="WATCH MORE" link="#" />
-
                   </div>
-
 
                   <div className={styles.video3}>
                     <iframe

@@ -4,7 +4,7 @@
         align-items: center;
         margin: 20px 0;
 
-        a {
+        a, button {
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -20,6 +20,7 @@
             border: none;
             transition: transform 0.1s, box-shadow 0.1s;
             position: relative;
+            cursor: pointer;
 
             &:hover {
                 transform: translateY(2px);
