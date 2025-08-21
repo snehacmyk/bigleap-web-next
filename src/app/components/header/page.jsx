@@ -36,7 +36,7 @@ export default function MainHeader() {
             <nav className={menuOpen ? `${styles.nav} ${styles.open}` : styles.nav}>
                 <ul onClick={closeMenu}>
                     <li>
-                        <Link href="">HOME</Link>
+                        <Link href="/">HOME</Link>
                     </li>
                     <li>
                         <Link href="/about">ABOUT US</Link>
@@ -48,7 +48,7 @@ export default function MainHeader() {
                         <Link href="#">PORTFOLIO</Link>
                     </li>
                     <li>
-                        <Link href="#">BLOG</Link>
+                        <Link href="/blog">BLOG</Link>
                     </li>
                     <li>
                         <Link href="#">CONTACT US</Link>

@@ -1,0 +1,43 @@
+.blogsection {
+  padding: 120px 0 80px 0;
+}
+.blogsection .blogcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.blogsection .blogcontent .bloghead h5 {
+  color: #fff;
+  text-align: center;
+}
+.blogsection .blogcontent .bloghead h2 {
+  color: #fff;
+}
+.blogsection .blogcontent .blogimages {
+  padding: 30px 0;
+}
+.blogsection .blogcontent .blogimages img {
+  width: 100%;
+  height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogsection .blogcontent .blogimages .titleHead {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+}
+.blogsection .blogcontent .blogimages .titleHead .title {
+  font-weight: bold;
+  color: #fff;
+  font-family: sans-serif !important;
+}
+.blogsection .blogcontent .blogimages .titleHead .date {
+  font-size: 1rem;
+  color: #ccc;
+}
+.blogsection .blogcontent .blogimages .about p {
+  font-size: 1rem;
+  color: #dcdcdc;
+}/*# sourceMappingURL=blog.module.css.map */

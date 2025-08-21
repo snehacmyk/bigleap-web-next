@@ -2,7 +2,7 @@
 
 import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperNavigation from './SwiperNavigation';
+import SwiperNavigation from '../SwiperNavigation';
 import styles from './slider.module.css';
 import Image from 'next/image';
 
@@ -57,7 +57,7 @@ export default function Slider({
                 breakpoints={isVideoSlides ? { 320: { slidesPerView: 1 }, 640: { slidesPerView: 1 }, 1024: { slidesPerView: 1 }, 1366: { slidesPerView: 1 } } : breakpoints}
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
-                
+
             >
                 {isVideoSlides
                     ? datas.map((item, idx) => (
@@ -88,7 +88,9 @@ export default function Slider({
                     : datas.map((item, idx) => (
                         <SwiperSlide key={item.idname ? `${item.idname}-${idx}` : `slide-${idx}`}>
                             <div>
-                                <Image src={item.img} alt={item.caption || "img"} style={slideImageStyle} width={item.imgWH} height={item.imgWH}/>
+                                <div className={styles.imageContainer}>
+                                    <Image src={item.img} alt={item.caption || "img"} style={slideImageStyle} width={item.imgWH} height={item.imgWH} />
+                                </div>
                                 {item.date && (
                                     <div style={{ marginTop: '8px', color: '#fff', fontSize: '14px' }}>{item.date}</div>
                                 )}

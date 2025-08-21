@@ -1,11 +1,13 @@
 import Image from "next/image";
 // import styles from "./page.module.css";
 import styles from "./index.module.scss";
-import Slider from "./components/slider";
+import Slider from "./components/slider/page.jsx";
 import BusinessArea from "./components/business-area";
 import Difference from "./components/different";
-import CTAButton from "./components/cta-button";
-import FAQSection from "./components/faq";
+import CTAButton from "./components/ctaButton/page.jsx";
+import FAQSection from "./components/faq/page.jsx";
+import BlogSection from "./components/blogs/page.jsx";
+import EnquirySect from "./components/enquiry/page.jsx";
 const list = [
   {
     title: 'Strengthening brand identity',
@@ -150,6 +152,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* <CounterHead /> */}
 
       {/* VIDEO SLIDER AREA START */}
 
@@ -237,47 +240,55 @@ export default function Home() {
       </section>
 
 
+{/* CLIENTS AREA START */}
+
+ <section className={styles["client-section"]}>
+        <div className={styles["client-content"]}>
+          <h5>Our Clients</h5>
+          <h2>Trusted Clients</h2>
+        </div>
+        {/* <div className={styles.specialslide}> */}
+        <Slider datas={[
+          { img: "/image (1).jpg", imgWH: 774, idname: "clientSlide1" },
+          { img: "/image (2).jpg", imgWH: 774, idname: "clientSlide2" },
+          { img: "/image (3).jpg", imgWH: 774, idname: "clientSlide3" },
+          { img: "/image (5).jpg", imgWH: 774, idname: "clientSlide4" },
+          { img: "/image (6).jpg", imgWH: 774, idname: "clientSlide1" },
+          { img: "/image (7).jpg", imgWH: 774, idname: "clientSlide2" },
+          { img: "/image (8).jpg", imgWH: 774, idname: "clientSlide3" },
+          { img: "/image (9).jpg", imgWH: 774, idname: "clientSlide1" },
+          { img: "/image (10).jpg", imgWH: 774, idname: "clientSlide4" },
+          { img: "/image (3).jpg", imgWH: 774, idname: "clientSlide2" },
+          { img: "/image (7).jpg", imgWH: 774, idname: "clientSlide3" },
+          { img: "/image (5).jpg", imgWH: 774, idname: "clientSlide4" },
+        ]}
+          spaceBetween={5}
+          slidesPerView={11}
+          slideImageStyle={{
+            width: '100%',
+
+          }}
+          navButtons={false}
+          breakpoints={{
+            320: { slidesPerView: 1, spaceBetween: 10 },
+            640: { slidesPerView: 2, spaceBetween: 15 },
+            1024: { slidesPerView: 3, spaceBetween: 120 },
+            1366: { slidesPerView: 10, spaceBetween: 0 },
+          }}
+        />
+        {/* </div> */}
+      </section>
+
+
+
       {/* DIFFERENCE AREA START */}
       <Difference></Difference>
 
-<FAQSection/>
+      <FAQSection />
 
-      <section className={styles["client-section"]}>
-          <div className={styles["client-content"]}>
-            <h5>Our Clients</h5>
-            <h2>Trusted Clients</h2>
-          </div>
-          {/* <div className={styles.specialslide}> */}
-          <Slider datas={[
-            { img: "/image (1).jpg",imgWH: 774, idname: "clientSlide1" },
-            { img: "/image (2).jpg",imgWH: 774, idname: "clientSlide2" },
-            { img: "/image (3).jpg",imgWH: 774, idname: "clientSlide3" },
-            { img: "/image (5).jpg",imgWH: 774, idname: "clientSlide4" },
-            { img: "/image (6).jpg",imgWH: 774, idname: "clientSlide1" },
-            { img: "/image (7).jpg",imgWH: 774, idname: "clientSlide2" },
-            { img: "/image (8).jpg",imgWH: 774, idname: "clientSlide3" },
-            { img: "/image (9).jpg",imgWH: 774, idname: "clientSlide1" },
-            { img: "/image (10).jpg",imgWH: 774, idname: "clientSlide4" },
-            { img: "/image (3).jpg",imgWH: 774, idname: "clientSlide2" },
-            { img: "/image (7).jpg",imgWH: 774, idname: "clientSlide3" },
-            { img: "/image (5).jpg",imgWH: 774, idname: "clientSlide4" },
-          ]}
-            spaceBetween={5}
-            slidesPerView={11}
-            slideImageStyle={{
-              width: '100%',
+      <BlogSection />
 
-            }}
-            navButtons={false}
-            breakpoints={{
-              320: { slidesPerView: 1, spaceBetween: 10 },
-              640: { slidesPerView: 2, spaceBetween: 15 },
-              1024: { slidesPerView: 3, spaceBetween: 120 },
-              1366: { slidesPerView: 10, spaceBetween: 0 },
-            }}
-          />
-        {/* </div> */}
-      </section>
+     <EnquirySect/>
 
     </>
 

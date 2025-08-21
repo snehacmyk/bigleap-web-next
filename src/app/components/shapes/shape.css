@@ -1,0 +1,13 @@
+.shape {
+  position: absolute;
+  top: -50%;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.47;
+}
+.shape img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}/*# sourceMappingURL=shape.css.map */

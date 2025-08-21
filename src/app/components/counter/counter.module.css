@@ -1,0 +1,48 @@
+.stats-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  padding: 60px 0;
+}
+
+.stat-symbol {
+  position: absolute;
+  right: -30px;
+  top: 24%;
+  color: #616161;
+  font-size: 40px;
+}
+
+.stat-block {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.stat-number {
+  font-size: 120px;
+  font-weight: 700;
+  color: #444;
+  line-height: 1;
+  letter-spacing: -4px;
+}
+
+.stat-label {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.stat-divider {
+  width: 2px;
+  height: 90px;
+  background: #444;
+  opacity: 0.3;
+}/*# sourceMappingURL=counter.module.css.map */
