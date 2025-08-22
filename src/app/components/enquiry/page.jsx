@@ -11,6 +11,14 @@ export default function EnquirySect() {
     import("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+    console.log("Form Submitted:", data);
+    // You can send `data` to your API here
+  };
+
   return (
     <>
       <section className={styles["enquiry-section"]}>
@@ -38,8 +46,8 @@ export default function EnquirySect() {
         aria-labelledby="enquiryModalLabel"
         tabIndex="-1"
       >
-        <div className="modal-dialog modal-dialog-centered">
-          <div className="modal-content ">
+        <div className={`modal-dialog modal-dialog-centered ${styles.modalDialog}`}>
+          <div className={`modal-content ${styles.modalContent}`}>
             <div className="modal-header">
               <h1 className="modal-title fs-5" id="enquiryModalLabel">
                 Enquiry Form
@@ -51,66 +59,44 @@ export default function EnquirySect() {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="modal-body">
-              <form>
-                <div className="mb-3">
-                  <label htmlFor="name" className="form-label">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="name"
-                    required
-                  />
+            <form onSubmit={handleSubmit}>
+              <div className="modal-body">
+                <div className="row">
+                  <div className="col-xl-6">
+                    <div className={styles.input}>
+                      <input type="text" name="name" placeholder="Your Name" required />
+                    </div>
+                  </div>
+                  <div className="col-xl-6">
+                    <div className={styles.input}>
+                      <input type="text" name="phone" placeholder="Your Phone" required />
+                    </div>
+                  </div>
+                  <div className="col-xl-12">
+                    <div className={styles.input}>
+                      <input type="email" name="email" placeholder="Your Email" required />
+                    </div>
+                  </div>
+                  <div className="col-xl-12">
+                    <div className={styles.input}>
+                      <textarea name="message" placeholder="Your Message"></textarea>
+                    </div>
+                  </div>
                 </div>
-                <div className="mb-3">
-                  <label htmlFor="email" className="form-label">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    className="form-control"
-                    id="email"
-                    required
-                  />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="phone" className="form-label">
-                    Phone
-                  </label>
-                  <input
-                    type="tel"
-                    className="form-control"
-                    id="phone"
-                    required
-                  />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="message" className="form-label">
-                    Message
-                  </label>
-                  <textarea
-                    className="form-control"
-                    id="message"
-                    rows="4"
-                    required
-                  ></textarea>
-                </div>
-              </form>
-            </div>
-            <div className="modal-footer">
-              <button
-                type="button"
-                className="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" className="btn btn-primary">
-                Submit Enquiry
-              </button>
-            </div>
+              </div>
+              <div className="modal-footer">
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="submit" className="btn btn-primary">
+                  Submit Enquiry
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
