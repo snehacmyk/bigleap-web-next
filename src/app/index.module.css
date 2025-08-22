@@ -60,14 +60,18 @@
 .slide-head .special-head h2 {
   color: #fff;
   font-family: "Boldonse", system-ui !important;
-  font-size: 80px;
+  font-size: 100px !important;
   text-align: center;
   font-weight: 500;
+  margin: 0px 0px 50px;
 }
-.slide-head .special-head p {
+.slide-head .special-head h5 {
   text-align: center;
   color: #fff;
-  width: 80%;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 17px;
+  padding: 0 110px;
+  line-height: 26px;
 }
 .mySwiper {
   width: 100%;
@@ -87,6 +91,7 @@
 
 .watch-area {
   position: relative;
+  padding: 120px 0 80px 0;
 }
 .watch-area .watch .first-video {
   display: flex;

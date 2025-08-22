@@ -78,11 +78,11 @@ export default function Home() {
           <div className={styles["special-head"]}>
             <h2>WE ARE SPECIALIZED</h2>
 
-            <p>
+            <h5>
               We are a highly dynamic creative bunch who specializes in
               delivering 360 production services. Specialized company in
               photography, videography and film production in UAE
-            </p>
+            </h5>
           </div>
           <div className={styles.specialslide}>
             <Slider
@@ -117,11 +117,18 @@ export default function Home() {
                   readbtn: "Know More",
                   idname: "folio",
                 },
+                {
+                  img: "/img1.jpg",
+                  caption: "2D motion graphics",
+                  readbtn: "Know More",
+                  idname: "folio",
+                },
               ]}
-              spaceBetween={5}
+              spaceBetween={0}
               slidesPerView={4}
               loop={true}
-              imageSize={200}
+              imageSize={190}
+              navPos={25}
               breakpoints={{
                 320: { slidesPerView: 1, spaceBetween: 10 },
                 640: { slidesPerView: 2, spaceBetween: 15 },
