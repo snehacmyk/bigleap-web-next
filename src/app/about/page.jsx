@@ -4,16 +4,17 @@ import CreativeTeam from '../components/creative-team/creative';
 import FAQSection from '../components/faq/faq';
 import Difference from '../components/different';
 import ClientsArea from '../components/clients-area/clients.jsx';
-
+import TitleBanner from '../components/title-banner/title.jsx';
 export default function AboutPage() {
     return (
         <>
             {/* TITLE BANNER AREA */}
 
-            <section className={styles['title-banner']}>
+            {/* <section className={styles['title-banner']}>
                 <h1> Our creativity begins where reality ends </h1>
 
-            </section>
+            </section> */}
+            <TitleBanner title="Our creativity begins where reality ends" />
 
 
             {/* ABOUT CONTENT AREA */}

@@ -1,21 +1,3 @@
-.title-banner {
-  width: 100%;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20%;
-  position: relative;
-}
-.title-banner h1 {
-  color: white;
-  text-align: center;
-  font-weight: 400;
-  line-height: 100px;
-  font-size: 4rem !important;
-  font-family: "Boldonse", system-ui !important;
-}
-
 .about-main-section {
   position: relative;
 }
@@ -29,6 +11,10 @@
   width: 100%;
   height: auto;
   display: block;
+}
+.about-main-section .about-sect .abt-cnt {
+  padding: 160px 0;
+  width: 90%;
 }
 .about-main-section .about-sect .abt-cnt h4 {
   line-height: 50px;
@@ -53,10 +39,14 @@
 }
 .history-area .history-head h2 {
   color: #fff;
-  font-size: 3rem;
-  font-family: "Montserrat", sans-serif !important;
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: "Boldonse", system-ui !important;
 }
 .history-area .history-head p {
+  font-size: 1rem;
   color: #fff;
-  padding: 15px 20px;
+  font-family: "Montserrat", sans-serif !important;
+  text-align: center;
+  padding: 20px 200px;
 }/*# sourceMappingURL=about.module.css.map */

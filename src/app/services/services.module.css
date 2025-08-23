@@ -1,0 +1,17 @@
+.service-main-area .service-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-main-area .service-box .image .comicImg {
+  width: 100%;
+}
+.service-main-area .service-box .content h4 {
+  line-height: 50px;
+  color: #fff;
+}
+.service-main-area .service-box .content p {
+  color: #b1b1b1;
+  text-align: justify;
+  font-size: 16px;
+}/*# sourceMappingURL=services.module.css.map */
