@@ -1,44 +1,43 @@
 .creative-team {
-    padding: 120px 0 80px 0;
+  padding: 120px 0 80px 0;
   h2 {
     color: #fff;
     text-align: center;
     padding-bottom: 50px;
   }
 
-  .image-style:hover{
-      background: rgb(255, 66, 66);
+  .image-style:hover {
+    background: rgb(206, 25, 25);
 
-      img{
-        transform: scale(.95);
-      }
-  
+    img {
+      transform: scale(0.98);
+    }
   }
   .image-style {
-
-      transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     img {
       width: 100%;
       transition: all 0.3s ease-in-out;
+      height: 50vh;
+      object-fit: contain;
     }
   }
-  .content{
+  .content {
     display: flex;
     align-items: left;
     flex-direction: column;
     padding: 20px 0;
-  h6{
-    color: #fff;
+    h6 {
+      color: #fff;
+      font-family: "Boldonse", system-ui !important;
+    }
+    p {
+      color: #afadad;
+    }
   }
-  p{
-    color: #afadad;
-  }
-  }
-
 }
 
-.profile{
-    .image-style{
-
-    }
+.profile {
+  .image-style {
+  }
 }

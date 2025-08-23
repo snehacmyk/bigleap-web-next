@@ -9,14 +9,18 @@
 }
 .footerArea .bigleap .footerImage {
   width: 55%;
+  height: 20vh;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .footerArea .content {
   padding: 0 0 30px 70px;
 }
 .footerArea .content .bigleapCnt h2 {
-  margin: 0 0 45px 0;
+  margin: 0 0 50px 0;
   color: #fff;
-  font-size: 3rem;
+  font-size: 3.5rem;
+  font-weight: 400;
   font-family: "Boldonse", system-ui !important;
 }
 .footerArea .content .footerList .subcol {
@@ -40,9 +44,16 @@
 .footerArea .content .footerList ul {
   list-style: none;
 }
+.footerArea .content .footerList ul li {
+  list-style: none;
+  line-height: 30px;
+}
 .footerArea .content .footerList ul li a {
-  color: #fff;
+  color: #bdbdbd;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 16px;
+  font-weight: 500;
 }
 .footerArea .footer-bottom {
   border-top: 1px solid #3e3e3e;

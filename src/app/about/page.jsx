@@ -1,6 +1,9 @@
 import styles from './about.module.scss';
 import Image from 'next/image';
 import CreativeTeam from '../components/creative-team/creative';
+import FAQSection from '../components/faq/faq';
+import Difference from '../components/different';
+
 export default function AboutPage() {
     return (
         <>
@@ -87,6 +90,10 @@ export default function AboutPage() {
 
 {/* CREATIVE TEAM */}
 <CreativeTeam />
+
+      <FAQSection />
+      <Difference/>
+
         </>
     );
 }

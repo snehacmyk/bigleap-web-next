@@ -4,33 +4,33 @@ export default function CreativeTeam() {
   const list = [
     {
       image: "/team/gokul.jpg",
-      name: "Blog 1 Subtitle",
-      status: "2023-10-01",
+      name: "Gokul",
+      status: "creative Director",
     },
     {
       image: "/team/basil.jpg",
-      name: "Blog 2 Subtitle",
-      status: "2023-10-02",
+      name: "Basil",
+      status: "Generalist",
     },
     {
       image: "/team/iyas.jpg",
-      name: "Blog 3 Subtitle",
-      status: "2023-10-03",
+      name: "Iyas",
+      status: "Senior Designer",
     },
     {
       image: "/team/anu.jpg",
-      name: "Blog 4 Subtitle",
-      status: "2023-10-04",
+      name: "Anu",
+      status: "Animator",
     },
     {
       image: "/team/sreerag.jpg",
-      name: "Blog 5 Subtitle",
-      status: "2023-10-05",
+      name: "Sreerag",
+      status: "Video Editor",
     },
     {
       image: "/team/hadi.jpg",
-      name: "Blog 6 Subtitle",
-      status: "2023-10-06",
+      name: "Hadi",
+      status: "Graphic Designer",
     },
   ];
   return (
