@@ -50,7 +50,7 @@ export default function EnquirySect() {
           className={`modal-dialog modal-dialog-centered ${styles.modalDialog}`}
         >
           <div className={`modal-content ${styles.modalContent}`}>
-            <div className="modal-header">
+            <div className={`modal-header ${styles.modalHeader}`}>
               <h1 className="modal-title fs-5" id="enquiryModalLabel">
                 Enquiry Form
               </h1>

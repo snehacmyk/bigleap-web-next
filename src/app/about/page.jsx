@@ -3,6 +3,7 @@ import Image from 'next/image';
 import CreativeTeam from '../components/creative-team/creative';
 import FAQSection from '../components/faq/faq';
 import Difference from '../components/different';
+import ClientsArea from '../components/clients-area/clients.jsx';
 
 export default function AboutPage() {
     return (
@@ -90,6 +91,7 @@ export default function AboutPage() {
 
 {/* CREATIVE TEAM */}
 <CreativeTeam />
+      <ClientsArea />
 
       <FAQSection />
       <Difference/>

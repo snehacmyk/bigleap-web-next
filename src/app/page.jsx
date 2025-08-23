@@ -8,6 +8,7 @@ import CTAButton from "./components/ctaButton/ctabtn.jsx";
 import FAQSection from "./components/faq/faq.jsx";
 import BlogSection from "./components/blogs/blog.jsx";
 import EnquirySect from "./components/enquiry/enquiry.jsx";
+import ClientsArea from "./components/clients-area/clients.jsx";
 const list = [
   {
     title: "Strengthening brand identity",
@@ -349,43 +350,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CLIENTS AREA START */}
-
-      <section className={styles["client-section"]}>
-        <div className={styles["client-content"]}>
-          <h5>Our Clients</h5>
-          <h2>Trusted Clients</h2>
-        </div>
-        {/* <div className={styles.specialslide}> */}
-        <Slider
-          datas={[
-            { img: "/image (1).jpg", imgWH: 774, idname: "clientSlide1" },
-            { img: "/image (2).jpg", imgWH: 774, idname: "clientSlide2" },
-            { img: "/image (3).jpg", imgWH: 774, idname: "clientSlide3" },
-            { img: "/image (5).jpg", imgWH: 774, idname: "clientSlide4" },
-            { img: "/image (6).jpg", imgWH: 774, idname: "clientSlide1" },
-            { img: "/image (7).jpg", imgWH: 774, idname: "clientSlide2" },
-            { img: "/image (8).jpg", imgWH: 774, idname: "clientSlide3" },
-            { img: "/image (9).jpg", imgWH: 774, idname: "clientSlide1" },
-            { img: "/image (10).jpg", imgWH: 774, idname: "clientSlide4" },
-            { img: "/image (3).jpg", imgWH: 774, idname: "clientSlide2" },
-            { img: "/image (7).jpg", imgWH: 774, idname: "clientSlide3" },
-            { img: "/image (5).jpg", imgWH: 774, idname: "clientSlide4" },
-          ]}
-          spaceBetween={0}
-          slidesPerView={11}
-          imageSize={150}
-          navButtons={false}
-          breakpoints={{
-            320: { slidesPerView: 1, spaceBetween: 0 },
-            640: { slidesPerView: 2, spaceBetween: 0 },
-            1024: { slidesPerView: 3, spaceBetween: 0 },
-            1366: { slidesPerView: 11, spaceBetween: 0 },
-          }}
-        />
-        {/* </div> */}
-      </section>
-
+      {/* client area */}
+      <ClientsArea />
       {/* DIFFERENCE AREA START */}
       <Difference></Difference>
 
