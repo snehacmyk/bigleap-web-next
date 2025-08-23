@@ -1,10 +1,43 @@
-import styles from '../components/info.module.scss';
-import Link from 'next/link';
+import styles from "../components/info.module.scss";
+import Link from "next/link";
 
 export default function InfoArea() {
-    return (
-        <>
-            <section className={styles.infosec}>
+  return (
+    <>
+      <section className={styles["header-top-area"]}>
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-8 col-lg-6 col-md-12 col-12"></div>
+            <div className="col-xl-4 col-lg-6 col-md-12 col-12">
+              <div className={styles["head-top-contacts"]}>
+                <ul>
+                  <li>
+                    <Link href="mailto:info@bigleap.ae" className={styles.link}>
+                      <i
+                        className="fa fa-envelope"
+                        style={{ marginRight: "8px" }}
+                      ></i>
+                      info@bigleap.ae
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="tel:+123456789" className={styles.link}>
+                      <i
+                        className="fa fa-phone"
+                        style={{ marginRight: "8px" }}
+                      ></i>
+                      +971 05 6646 464
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <section className={styles.infosec}>
+                <div className="container">
                 <div className="row">
                     <div className="col-xl-7"></div>
                     <div className="col-xl-5">
@@ -16,9 +49,10 @@ export default function InfoArea() {
                             </ul>
                         </div>
                     </div>
+                </div>
 
                 </div>
-            </section>
-        </>
-    )
+            </section> */}
+    </>
+  );
 }

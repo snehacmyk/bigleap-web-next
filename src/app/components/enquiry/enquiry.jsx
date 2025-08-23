@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import styles from "../enquiry/enquiry.module.scss";
 import Image from "next/image";
-import CTAButton from "../ctaButton/page.jsx";
+import CTAButton from "../ctaButton/ctabtn.jsx";
 
 export default function EnquirySect() {
   useEffect(() => {
@@ -46,7 +46,9 @@ export default function EnquirySect() {
         aria-labelledby="enquiryModalLabel"
         tabIndex="-1"
       >
-        <div className={`modal-dialog modal-dialog-centered ${styles.modalDialog}`}>
+        <div
+          className={`modal-dialog modal-dialog-centered ${styles.modalDialog}`}
+        >
           <div className={`modal-content ${styles.modalContent}`}>
             <div className="modal-header">
               <h1 className="modal-title fs-5" id="enquiryModalLabel">
@@ -64,22 +66,40 @@ export default function EnquirySect() {
                 <div className="row">
                   <div className="col-xl-6">
                     <div className={styles.input}>
-                      <input type="text" name="name" placeholder="Your Name" required />
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Your Name"
+                        required
+                      />
                     </div>
                   </div>
                   <div className="col-xl-6">
                     <div className={styles.input}>
-                      <input type="text" name="phone" placeholder="Your Phone" required />
+                      <input
+                        type="text"
+                        name="phone"
+                        placeholder="Your Phone"
+                        required
+                      />
                     </div>
                   </div>
                   <div className="col-xl-12">
                     <div className={styles.input}>
-                      <input type="email" name="email" placeholder="Your Email" required />
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Your Email"
+                        required
+                      />
                     </div>
                   </div>
                   <div className="col-xl-12">
                     <div className={styles.input}>
-                      <textarea name="message" placeholder="Your Message"></textarea>
+                      <textarea
+                        name="message"
+                        placeholder="Your Message"
+                      ></textarea>
                     </div>
                   </div>
                 </div>

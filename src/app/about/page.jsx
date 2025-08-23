@@ -1,4 +1,5 @@
 import styles from './about.module.scss';
+import Image from 'next/image';
 export default function AboutPage() {
     return (
         <>
@@ -16,12 +17,12 @@ export default function AboutPage() {
                 <div className='container'>
                     <div className={styles['about-sect']}>
                         <div className='row'>
-                            <div className='col-xl-5 col-lg-6 col-md-12 col-12'>
+                            <div className='col-xl-5'>
                                 <div className={styles['abt-img']}>
-                                    <img src="comic.png" alt="" />
+                                    <Image src="/comic.png" alt="comic" width={574} height={885} className={styles.comic} />
                                 </div>
                             </div>
-                            <div className='col-xl-7 col-lg-6 col-md-12 col-12'>
+                            <div className='col-xl-7'>
                                 <div className={styles['abt-cnt']}>
                                     <h4>A creative studio specializing in the production of captivating animation videos that bring
                                         ideas to life.</h4>

@@ -1,10 +1,5 @@
-.infosec {
-    padding: 0 !important;
-
-    .contacts {
-        display: flex;
-
-
+.header-top-area {
+    .head-top-contacts {
         ul {
             display: flex;
             align-items: center;
@@ -12,45 +7,21 @@
             margin: 0;
             position: relative;
             z-index: 999;
-            // left: 100px;
+            background-color: #ff0000;
+                padding: 10px 0 10px 0;
+                    width: fit-content;
+                    margin-left: auto;
+gap: 40px;
+    padding: 20px 40px;
+                    li{
+list-style: none;
+a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
 
-            li {
-                background: #ed2124;
-                list-style-type: none;
-                padding: 20px 40px 20px 40px;
 
-
-
-                a {
-                    color: #fff;
-                    text-decoration: none;
-
-                    i {
-                        color: #fff;
-                        padding: 0 5px;
                     }
-
-                    &:hover {
-                        text-decoration: none;
-                    }
-                }
-            }
         }
     }
-
-   
-
-    // .shape {
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     bottom: 0;
-    //     z-index: -1;
-
-    //     img {
-    //         width: 100%;
-    //         height: auto;
-    //         opacity: 0.5;
-    //     }
-    // }
 }

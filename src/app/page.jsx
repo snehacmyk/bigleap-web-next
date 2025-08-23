@@ -4,10 +4,10 @@ import styles from "./index.module.scss";
 import Slider from "./components/slider/slider.jsx";
 import BusinessArea from "./components/business-area";
 import Difference from "./components/different";
-import CTAButton from "./components/ctaButton/page.jsx";
-import FAQSection from "./components/faq/page.jsx";
-import BlogSection from "./components/blogs/page.jsx";
-import EnquirySect from "./components/enquiry/page.jsx";
+import CTAButton from "./components/ctaButton/ctabtn.jsx";
+import FAQSection from "./components/faq/faq.jsx";
+import BlogSection from "./components/blogs/blog.jsx";
+import EnquirySect from "./components/enquiry/enquiry.jsx";
 const list = [
   {
     title: "Strengthening brand identity",
@@ -50,7 +50,7 @@ export default function Home() {
       </section>
       {/* HERO SECTION END */}
 
-      <section className={styles.about}>
+      {/* <section className={styles.about}>
         <div className="row align-items-center">
           <div className={styles.rowss}>
             <div className="col-xl-4">
@@ -69,14 +69,39 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
+      <section className={styles["about-area"]}>
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-xl-5 col-lg-4 col-md-3 col-12">
+              <div className={styles["about-first-box"]}>
+                <img src="Scate.png" alt="" />
+              </div>
+            </div>
+
+            <div className="col-xl-7 col-lg-8 col-md-9 col-12">
+              <div className={styles["about-secont-box"]}>
+                <h4>
+                  {" "}
+                  Bigleap is a digital product design agency thatturns complex
+                  technology into intuitive, usable interfaces. We work with
+                  forward-thinking teams to create market-ready digital products
+                  that areeasy to use and hard to ignore.
+                </h4>
+
+                <CTAButton title="ABOUT US" link="/about" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* SLIDER SECTION */}
 
       <section className={styles["slide-head"]}>
         <div className="container">
           <div className={styles["special-head"]}>
-            <h2>WE ARE SPECIALIZED</h2>
+            <h2>We are Specialized</h2>
 
             <h5>
               We are a highly dynamic creative bunch who specializes in
@@ -228,9 +253,14 @@ export default function Home() {
               ]}
               spaceBetween={0}
               slidesPerView={1}
-              slideImageStyle={{
-                width: "100%",
-                height: "100%",
+              imageSize={100}
+              loop={true}
+              navPos={25}
+              breakpoints={{
+                320: { slidesPerView: 1, spaceBetween: 10 },
+                640: { slidesPerView: 2, spaceBetween: 15 },
+                1024: { slidesPerView: 3, spaceBetween: 120 },
+                1366: { slidesPerView: 4, spaceBetween: 20 },
               }}
             />
           </div>
@@ -250,28 +280,24 @@ export default function Home() {
             datas={[
               {
                 img: "/gr-1.gif",
-                imgWH: 774,
                 date: "01-02-2025",
                 caption: "2D motion graphics",
                 idname: "MoGraph",
               },
               {
                 img: "/gr-2.gif",
-                imgWH: 774,
                 date: "01-02-2025",
                 caption: "Whiteboard Animations",
                 idname: "MoGraph",
               },
               {
                 img: "/gr-3.gif",
-                imgWH: 774,
                 date: "01-02-2025",
                 caption: "Storytelling scripted ",
                 idname: "MoGraph",
               },
               {
                 img: "/gr-1.gif",
-                imgWH: 774,
                 date: "01-02-2025",
                 caption: "3D product animation",
                 idname: "MoGraph",
@@ -279,15 +305,13 @@ export default function Home() {
             ]}
             spaceBetween={50}
             slidesPerView={3}
-            slideImageStyle={{
-              width: "100%",
-            }}
             breakpoints={{
               320: { slidesPerView: 1, spaceBetween: 10 },
               640: { slidesPerView: 2, spaceBetween: 15 },
               1024: { slidesPerView: 3, spaceBetween: 120 },
               1366: { slidesPerView: 3, spaceBetween: 50 },
             }}
+            imageSize={500}
           />
         </div>
         {/* </div> */}
@@ -302,7 +326,7 @@ export default function Home() {
               <div className="col-xl-5">
                 <div className={styles.heading}>
                   <h2>Let animation lead your business</h2>
-                  <p className={styles.listp}>
+                  <p className={styles.list}>
                     Where words fail, visuals take over. In this tech-driven
                     world, animation is the major edge that provides a creative
                     nudge to communication.
@@ -348,17 +372,15 @@ export default function Home() {
             { img: "/image (7).jpg", imgWH: 774, idname: "clientSlide3" },
             { img: "/image (5).jpg", imgWH: 774, idname: "clientSlide4" },
           ]}
-          spaceBetween={5}
+          spaceBetween={0}
           slidesPerView={11}
-          slideImageStyle={{
-            width: "100%",
-          }}
+          imageSize={150}
           navButtons={false}
           breakpoints={{
-            320: { slidesPerView: 1, spaceBetween: 10 },
-            640: { slidesPerView: 2, spaceBetween: 15 },
-            1024: { slidesPerView: 3, spaceBetween: 120 },
-            1366: { slidesPerView: 10, spaceBetween: 0 },
+            320: { slidesPerView: 1, spaceBetween: 0 },
+            640: { slidesPerView: 2, spaceBetween: 0 },
+            1024: { slidesPerView: 3, spaceBetween: 0 },
+            1366: { slidesPerView: 11, spaceBetween: 0 },
           }}
         />
         {/* </div> */}
