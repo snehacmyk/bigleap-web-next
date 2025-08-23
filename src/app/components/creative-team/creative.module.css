@@ -1,0 +1,33 @@
+.creative-team {
+  padding: 120px 0 80px 0;
+}
+.creative-team h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.creative-team .image-style:hover {
+  background: rgb(255, 66, 66);
+}
+.creative-team .image-style:hover img {
+  transform: scale(0.95);
+}
+.creative-team .image-style {
+  transition: all 0.3s ease-in-out;
+}
+.creative-team .image-style img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.creative-team .content {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.creative-team .content h6 {
+  color: #fff;
+}
+.creative-team .content p {
+  color: #afadad;
+}/*# sourceMappingURL=creative.module.css.map */

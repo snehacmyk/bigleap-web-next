@@ -57,6 +57,10 @@ export default function Slider({
         style={
           isVideoSlides ? { padding: "10px 0px" } : { padding: "30px 0px" }
         }
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         grabCursor={true}
         spaceBetween={spaceBetween}
         centeredSlides={false}

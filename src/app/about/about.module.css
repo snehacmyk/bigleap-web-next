@@ -12,6 +12,7 @@
   text-align: center;
   line-height: 100px;
   font-size: 4rem !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .about-main-section {
@@ -21,24 +22,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
+  gap: 40px;
 }
-.about-main-section .about-sect .abt-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.about-main-section .about-sect .abt-img img {
+.about-main-section .about-sect .abt-img .comic {
   width: 100%;
+  height: auto;
+  display: block;
 }
 .about-main-section .about-sect .abt-cnt h4 {
   line-height: 50px;
   color: #fff;
   font-size: 1.7rem;
+  font-family: "Boldonse", system-ui !important;
 }
 .about-main-section .about-sect .abt-cnt p {
   color: #dedede;
-  text-align: justify;
+  text-align: left;
   line-height: 27px;
   padding-top: 15px;
 }
@@ -54,6 +53,7 @@
 .history-area .history-head h2 {
   color: #fff;
   font-size: 3rem;
+  font-family: "Montserrat", sans-serif !important;
 }
 .history-area .history-head p {
   color: #fff;

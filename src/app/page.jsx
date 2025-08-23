@@ -311,7 +311,7 @@ export default function Home() {
               1024: { slidesPerView: 3, spaceBetween: 120 },
               1366: { slidesPerView: 3, spaceBetween: 50 },
             }}
-            imageSize={500}
+            imageSize={400}
           />
         </div>
         {/* </div> */}

@@ -25,31 +25,31 @@
   top: -92%;
 }
 
-.about {
-  padding: 200px 0 80px 0;
-}
-.about .rowss {
+.about-area .about-first-box {
   display: flex;
+  justify-self: flex-end;
   align-items: center;
-  padding: 0 240px;
-  gap: 50px;
 }
-.about .rowss .image {
-  width: 90%;
+.about-area .about-first-box img {
+  width: 80%;
 }
-.about .rowss .abtcnt {
+.about-area .about-secont-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.about .rowss .abtcnt h4 {
-  font-family: "Montserrat", sans-serif !important;
+.about-area .about-secont-box h4 {
   color: #fff;
-  font-size: 1.7rem !important;
+  font-family: "Montserrat", sans-serif !important;
+  letter-spacing: -1px;
+  font-size: 1.8rem;
+}
+.about-area .about-secont-box a {
+  text-decoration: none;
 }
 
 .slide-head {
-  padding: 120px 0 80px 0;
+  padding: 150px 0 80px 0;
 }
 .slide-head .special-head {
   display: flex;
@@ -66,11 +66,11 @@
   margin: 0px 0px 50px;
 }
 .slide-head .special-head h5 {
-  text-align: center;
   color: #fff;
+  text-align: center;
   font-family: "Montserrat", sans-serif !important;
   font-size: 17px;
-  padding: 0 110px;
+  padding: 0 128px;
   line-height: 26px;
 }
 .mySwiper {
@@ -145,11 +145,11 @@
 }
 
 .video-slider {
-  padding: 200PX 0 80PX;
+  padding: 200px 0 80px;
 }
 
 .motion-graphics {
-  padding: 120PX 0 80PX 0;
+  padding: 120px 0 80px 0;
 }
 .motion-graphics .motion-graphics-content {
   display: flex;
@@ -172,12 +172,15 @@
 }
 .businessArea .business-list .heading h2 {
   color: #fff;
-  font-size: 3.1rem;
-  font-weight: 700;
+  font-size: 3.5rem;
+  font-weight: 400;
   line-height: 82px;
+  font-family: "Boldonse", system-ui !important;
 }
-.businessArea .business-list .heading .listp {
+.businessArea .business-list .heading .list {
   color: #fff;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 .businessArea .buscol .businessHead h5 {
   color: #ed232a;

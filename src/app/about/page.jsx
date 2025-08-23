@@ -1,5 +1,6 @@
 import styles from './about.module.scss';
 import Image from 'next/image';
+import CreativeTeam from '../components/creative-team/creative';
 export default function AboutPage() {
     return (
         <>
@@ -83,6 +84,9 @@ export default function AboutPage() {
                 </div>
             </section>
 
+
+{/* CREATIVE TEAM */}
+<CreativeTeam />
         </>
     );
 }

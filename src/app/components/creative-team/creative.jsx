@@ -1,44 +1,57 @@
+import Profile from "./profile";
+import styles from "./creative.module.scss";
 export default function CreativeTeam() {
   const list = [
     {
-      image: "/public/team/gokul.jpg",
+      image: "/team/gokul.jpg",
       name: "Blog 1 Subtitle",
       status: "2023-10-01",
     },
     {
-      image: "/public/team/basil.jpg",
+      image: "/team/basil.jpg",
       name: "Blog 2 Subtitle",
       status: "2023-10-02",
     },
     {
-      image: "/public/team/iyas.jpg",
+      image: "/team/iyas.jpg",
       name: "Blog 3 Subtitle",
       status: "2023-10-03",
     },
     {
-      image: "/public/team/anu.jpg",
+      image: "/team/anu.jpg",
       name: "Blog 4 Subtitle",
       status: "2023-10-04",
     },
     {
-      image: "/public/team/sreerag.jpg",
+      image: "/team/sreerag.jpg",
       name: "Blog 5 Subtitle",
       status: "2023-10-05",
     },
     {
-      image: "/public/team/hadi.jpg",
+      image: "/team/hadi.jpg",
       name: "Blog 6 Subtitle",
       status: "2023-10-06",
-    }
+    },
   ];
   return (
-    <section className="creative-team">
+    <section className={styles["creative-team"]}>
       <h2>Meet The Creative Team</h2>
       <div className="container">
         <div className="row">
-          <div className="col-xl-4"></div>
+              {list.map((item, index) => (
+                <div key={index} className="col-xl-4">
+                    <Profile
+                      image={item.image}
+                      name={item.name}
+                      status={item.status}
+                    />
+                  </div>
+              ))}
+          <div >
+            </div>
+          </div>
         </div>
-      </div>
     </section>
   );
 }
+                

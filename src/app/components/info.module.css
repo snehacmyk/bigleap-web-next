@@ -1,30 +1,22 @@
-.infosec {
-  padding: 0 !important;
-}
-.infosec .contacts {
-  display: flex;
-}
-.infosec .contacts ul {
+.header-top-area .head-top-contacts ul {
   display: flex;
   align-items: center;
   justify-content: end;
   margin: 0;
   position: relative;
   z-index: 999;
+  background-color: #ff0000;
+  padding: 10px 0 10px 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  gap: 40px;
+  padding: 20px 40px;
 }
-.infosec .contacts ul li {
-  background: #ed2124;
-  list-style-type: none;
-  padding: 20px 40px 20px 40px;
+.header-top-area .head-top-contacts ul li {
+  list-style: none;
 }
-.infosec .contacts ul li a {
-  color: #fff;
+.header-top-area .head-top-contacts ul li a {
   text-decoration: none;
-}
-.infosec .contacts ul li a i {
-  color: #fff;
-  padding: 0 5px;
-}
-.infosec .contacts ul li a:hover {
-  text-decoration: none;
+  color: rgb(255, 255, 255);
 }/*# sourceMappingURL=info.module.css.map */
