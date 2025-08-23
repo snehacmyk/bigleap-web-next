@@ -10,9 +10,10 @@
 .title-banner h1 {
   color: white;
   text-align: center;
+  font-weight: 400;
   line-height: 100px;
   font-size: 4rem !important;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Boldonse", system-ui !important;
 }
 
 .about-main-section {
