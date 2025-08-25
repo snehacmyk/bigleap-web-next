@@ -32,7 +32,7 @@ export default function ServiceImage() {
       caption: "VFX & Post Production",
     },
     {
-      image: "/servicess/Video Editing & Post Production.png",
+      image: "/servicess/video.png",
       caption: "Video Editing & Post Production",
     },
     {
