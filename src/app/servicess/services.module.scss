@@ -29,3 +29,35 @@
     }
   }
 }
+
+// animated description section
+
+.animatedDes {
+  padding: 150px 0 80px 0;
+  .allDes {
+    padding: 0 100px;
+
+    h2 {
+      color: #fff;
+      font-family: Boldonse, system-ui !important;
+      text-align: center;
+      font-size: 4rem;
+      font-weight: 400;
+      line-height: 95px;
+      // padding: 0 100px;
+
+      .colordText {
+        color: #ed2124;
+      }
+    }
+    .aniContent {
+      padding-top: 30px;
+
+      p {
+        font-family: Montserrat, sans-serif !important;
+        color: #fff9f9;
+        text-align: center;
+      }
+    }
+  }
+}

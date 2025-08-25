@@ -4,39 +4,39 @@ import CTAButton from "../ctaButton/ctabtn";
 export default function ServiceImage() {
   const list = [
     {
-      image: "/services/2danimation.png",
+      image: "/servicess/2danimation.png",
       caption: "2D Animation",
     },
     {
-      image: "/services/3danimation.png",
+      image: "/servicess/3danimation.png",
       caption: "3D Animation",
     },
     {
-      image: "/services/Whiteboard Animation.png",
+      image: "/servicess/Whiteboard Animation.png",
       caption: "Whiteboard Animation",
     },
     {
-      image: "/services/character.png",
+      image: "/servicess/character.png",
       caption: "Character Design",
     },
     {
-      image: "/services/comic-book.png",
+      image: "/servicess/comic-book.png",
       caption: "Comic Book",
     },
     {
-      image: "/services/red-machine.png",
+      image: "/servicess/red-machine.png",
       caption: "red machine",
     },
     {
-      image: "/services/VFX & Post Production.png",
+      image: "/servicess/VFX & Post Production.png",
       caption: "VFX & Post Production",
     },
     {
-      image: "/services/Video Editing & Post Production.png",
+      image: "/servicess/Video Editing & Post Production.png",
       caption: "Video Editing & Post Production",
     },
     {
-      image: "/services/Whiteboard Animation.png",
+      image: "/servicess/Whiteboard Animation.png",
       caption: "white board",
     },
   ];

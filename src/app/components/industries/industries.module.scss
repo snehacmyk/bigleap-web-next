@@ -1,0 +1,33 @@
+.Industries {
+    padding: 120px 0 80px 0;
+  h2 {
+    color: #fff;
+    text-align: center;
+    font-family: "Boldonse", system-ui !important;
+    font-size: 3.7rem !important;
+  }
+  p{
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+  }
+  .industryList {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul {
+      color: #fff;
+      li {
+        .link {
+          color: #fff;
+          text-decoration: none;
+          font-family: Montserrat, sans-serif !important;
+        }
+        .link:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}

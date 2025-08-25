@@ -1,4 +1,7 @@
 .ServiceImage {
+  // background: url('/enquiry/comic.png');
+  // width: 100%;
+  // position: relative;
   padding: 150px 0 80px 0;
   h2 {
     color: #fff;
@@ -38,16 +41,19 @@
       align-items: center;
       gap: 12px;
       position: absolute;
-      transform: translate(-200%, -50%);
+      transform: translate(-220%, -50%);
       left: 50%;
       top: 50%;
       transition: transform 0.3s ease-in-out;
 
       .listItem {
-        background: #fff;
-        padding: 10px;
+        background: #ffffff;
+        padding: 2px 10px;
+        width: 100%;
         h5 {
-          font-size: 14px !important;
+            color: #000000;
+          font-size: 16px !important;
+          font-family: "Montserrat", sans-serif !important;
         }
       }
     }

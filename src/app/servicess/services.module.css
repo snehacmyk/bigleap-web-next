@@ -20,4 +20,30 @@
   letter-spacing: normal;
   font-size: 16px;
   font-family: Montserrat, sans-serif !important;
+}
+
+.animatedDes {
+  padding: 150px 0 80px 0;
+}
+.animatedDes .allDes {
+  padding: 0 100px;
+}
+.animatedDes .allDes h2 {
+  color: #fff;
+  font-family: Boldonse, system-ui !important;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 95px;
+}
+.animatedDes .allDes h2 .colordText {
+  color: #ed2124;
+}
+.animatedDes .allDes .aniContent {
+  padding-top: 30px;
+}
+.animatedDes .allDes .aniContent p {
+  font-family: Montserrat, sans-serif !important;
+  color: #fff9f9;
+  text-align: center;
 }/*# sourceMappingURL=services.module.css.map */

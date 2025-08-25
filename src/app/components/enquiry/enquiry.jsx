@@ -23,10 +23,10 @@ export default function EnquirySect() {
     <>
       <section className={styles["enquiry-section"]}>
         <Image
-          src="/enquiry.png"
+          src="/enquiry/Enquire Now.png"
           alt="Enquiry Background"
-          width={1920}
-          height={1080}
+          width={1728}
+          height={756}
           className={styles.image}
         />
         <div className={styles.buttonContainer}>
@@ -51,7 +51,10 @@ export default function EnquirySect() {
         >
           <div className={`modal-content ${styles.modalContent}`}>
             <div className={`modal-header ${styles.modalHeader}`}>
-              <h1 className={`modal-title ${styles.title} fs-5`} id="enquiryModalLabel">
+              <h1
+                className={`modal-title ${styles.title} fs-5`}
+                id="enquiryModalLabel"
+              >
                 ENQUIRY FORM
               </h1>
               <button
