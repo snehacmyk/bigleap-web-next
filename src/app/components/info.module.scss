@@ -1,27 +1,25 @@
 .header-top-area {
-    .head-top-contacts {
-        ul {
-            display: flex;
-            align-items: center;
-            justify-content: end;
-            margin: 0;
-            position: relative;
-            z-index: 999;
-            background-color: #ff0000;
-                padding: 10px 0 10px 0;
-                    width: fit-content;
-                    margin-left: auto;
-gap: 40px;
-    padding: 20px 40px;
-                    li{
-list-style: none;
-a{
-    text-decoration: none;
-    color:rgb(255, 255, 255);
-}
-
-
-                    }
+  .head-top-contacts {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      margin: 0;
+      position: relative;
+      z-index: 999;
+      background-color: #ff0000;
+      padding: 10px 0 10px 0;
+      width: fit-content;
+      margin-left: auto;
+      gap: 40px;
+      padding: 20px 40px;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: rgb(255, 255, 255);
         }
+      }
     }
+  }
 }

@@ -51,18 +51,18 @@ export default function EnquirySect() {
         >
           <div className={`modal-content ${styles.modalContent}`}>
             <div className={`modal-header ${styles.modalHeader}`}>
-              <h1 className="modal-title fs-5" id="enquiryModalLabel">
-                Enquiry Form
+              <h1 className={`modal-title ${styles.title} fs-5`} id="enquiryModalLabel">
+                ENQUIRY FORM
               </h1>
               <button
                 type="button"
-                className="btn-close"
+                className={`btn-close ${styles.btnClose}`}
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
             </div>
             <form onSubmit={handleSubmit}>
-              <div className="modal-body">
+              <div className={`modal-body ${styles.modalBody}`}>
                 <div className="row">
                   <div className="col-xl-6">
                     <div className={styles.input}>
@@ -96,25 +96,17 @@ export default function EnquirySect() {
                   </div>
                   <div className="col-xl-12">
                     <div className={styles.input}>
-                      <textarea
+                      <input
+                        type="text"
                         name="message"
                         placeholder="Your Message"
-                      ></textarea>
+                      />
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="modal-footer">
-                <button
-                  type="button"
-                  className="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                >
-                  Close
-                </button>
-                <button type="submit" className="btn btn-primary">
-                  Submit Enquiry
-                </button>
+              <div className={`modal-footer ${styles.foottt}`}>
+                <CTAButton title="SUBMIT" link="#" />
               </div>
             </form>
           </div>

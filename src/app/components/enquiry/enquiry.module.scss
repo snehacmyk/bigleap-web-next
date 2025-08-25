@@ -18,6 +18,9 @@
     z-index: 2;
   }
 }
+.modalBody{
+  padding: 40px 0;
+}
 
 /* Modal width override */
 .modalDialog {
@@ -31,8 +34,6 @@
   width: 70% !important;
   height: 50vh;
   max-width: 1200px; // cap width on very large screens
-  background: #fff;
-  border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
@@ -40,42 +41,63 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  flex-direction: row;
   background: #ed2124 !important;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  padding: 32px 0 16px 0;
+  position: relative;
+  padding: 1rem;
 }
 
-.modal-title {
-  width: 100%;
+.title {
   text-align: center;
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
-  font-weight: 700;
   letter-spacing: 2px;
+  flex: 1;
+  margin: 0;
 }
 
 .btn-close {
   filter: invert(1); // makes close button white
   opacity: 1;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #050505;
+  padding: 0.25rem;
+  cursor: pointer;
+
+ 
+}
+.btnClose{
+  color: #fff;
 }
 
 .input input,
 .input textarea {
   width: 100%;
   margin-bottom: 20px;
-  padding: 8px 0;
+  padding: 10px 0;
   border: none;
-  border-bottom: 2px solid #e51c23;
+  border-bottom: 1px solid #e51c23;
   outline: none;
   font-size: 1.25rem;
   background: transparent;
   color: #333;
 }
+.input{
+  padding: 0 35px;
+}
 
-.modal-footer {
-  .btn-primary {
+.foottt {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  .btn {
     background: #e51c23;
     color: #fff;
     border: none;
@@ -83,28 +105,7 @@
     padding: 16px 48px;
     font-size: 1.25rem;
     font-weight: 600;
-    box-shadow: 0 2px 8px rgba(229, 28, 35, 0.15);
+    // box-shadow: 0 2px 8px rgba(229, 28, 35, 0.15);
     transition: background 0.2s;
-
-    &:hover {
-      background: #b71c1c;
-    }
-  }
-
-  .btn-secondary {
-    background: #fff;
-    color: #e51c23;
-    border: 1px solid #e51c23;
-    border-radius: 32px;
-    padding: 16px 48px;
-    font-size: 1.25rem;
-    font-weight: 600;
-    box-shadow: 0 2px 8px rgba(229, 28, 35, 0.1);
-    transition: background 0.2s, color 0.2s;
-
-    &:hover {
-      background: #e51c23;
-      color: #fff;
-    }
   }
 }

@@ -42,7 +42,7 @@ export default function MainHeader() {
                         <Link href="/about">ABOUT US</Link>
                     </li>
                     <li>
-                        <Link href="/services">SERVICES</Link>
+                        <Link href="/servicess">SERVICES</Link>
                     </li>
                     <li>
                         <Link href="#">PORTFOLIO</Link>

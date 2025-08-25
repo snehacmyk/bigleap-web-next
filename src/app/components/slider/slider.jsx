@@ -41,6 +41,7 @@ export default function Slider({
     1024: { slidesPerView: 3, spaceBetween: 120 },
     1366: { slidesPerView: 4, spaceBetween: 20 },
   },
+  autoplay = { delay: 2500, disableOnInteraction: false },  
   navButtons = true,
   imageSize = 100,
   navPos = 0,
@@ -57,10 +58,7 @@ export default function Slider({
         style={
           isVideoSlides ? { padding: "10px 0px" } : { padding: "30px 0px" }
         }
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        autoplay={autoplay}
         grabCursor={true}
         spaceBetween={spaceBetween}
         centeredSlides={false}

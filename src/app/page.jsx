@@ -155,6 +155,7 @@ export default function Home() {
               loop={true}
               imageSize={190}
               navPos={25}
+              autoplay={true}
               breakpoints={{
                 320: { slidesPerView: 1, spaceBetween: 10 },
                 640: { slidesPerView: 2, spaceBetween: 15 },
@@ -257,6 +258,7 @@ export default function Home() {
               imageSize={100}
               loop={true}
               navPos={25}
+              autoplay={false}
               breakpoints={{
                 320: { slidesPerView: 1, spaceBetween: 10 },
                 640: { slidesPerView: 2, spaceBetween: 15 },
