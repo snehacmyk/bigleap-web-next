@@ -45,13 +45,13 @@ export default function MainHeader() {
                         <Link href="/servicess">SERVICES</Link>
                     </li>
                     <li>
-                        <Link href="#">PORTFOLIO</Link>
+                        <Link href="/portfolio">PORTFOLIO</Link>
                     </li>
                     <li>
                         <Link href="/blog">BLOG</Link>
                     </li>
                     <li>
-                        <Link href="#">CONTACT US</Link>
+                        <Link href="/contact">CONTACT US</Link>
                     </li>
                 </ul>
             </nav>
